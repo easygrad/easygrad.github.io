@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  color: $black;
+  font-family: "Source Sans Pro",sans-serif,"APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif;
+  header {
+  }
+  main {
+    width: 80%;
+    margin: 0 auto;  
+    .nav__desc{
+      padding: 40px 0;
+        .nav__title{
+          font-weight: bold;
+          font-size: 40px;
+        }
+        .nav__summary{
+          font-weight: 300;
+          font-size: 20px;
+          color: $dark-grey;
+          margin-top: 6px;
+        }
+  }
+  }
+}

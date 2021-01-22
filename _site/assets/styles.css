@@ -1,0 +1,79 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+a { all: unset; cursor: pointer; text-decoration: none; }
+
+a:visited { color: inherit; text-decoration: none; }
+
+*, input { box-sizing: border-box; }
+
+input { border: none; box-sizing: border-box; }
+
+input:focus, input:active { outline: none; }
+
+html, body { height: 100%; color: #444444; font-family: "Source Sans Pro",sans-serif,"APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif; }
+
+html main, body main { width: 80%; margin: 0 auto; }
+
+html main .nav__desc, body main .nav__desc { padding: 40px 0; }
+
+html main .nav__desc .nav__title, body main .nav__desc .nav__title { font-weight: bold; font-size: 40px; }
+
+html main .nav__desc .nav__summary, body main .nav__desc .nav__summary { font-weight: 300; font-size: 20px; color: #90949a; margin-top: 6px; }
+
+nav { margin: 25px 50px; padding: 25px 0; font-size: 18px; display: flex; justify-content: center; }
+
+nav ul { display: flex; flex-direction: row; }
+
+nav ul li { margin: 0 20px; }
+
+nav ul li .active { border-bottom: 2px solid black; font-weight: bold; font-size: 19px; }
+
+footer { bottom: 0px; padding: 20px 0px; margin-top: 50px; border-top: 0.1px solid #90949a; width: 100%; display: flex; flex-direction: column; align-items: center; background-color: #f5f5f5; }
+
+footer .footer__text { color: #90949a; font-size: 12px; margin: 2px 0px; }
+
+.authors { display: flex; flex-direction: row; justify-content: center; }
+
+.authors .authors_list { display: flex; flex-direction: column; align-items: center; text-align: center; width: 30%; }
+
+.authors .authors_list .authors__img { width: 200px; height: 200px; border-radius: 50%; margin-bottom: 20px; }
+
+.authors .authors_list .authors__name { font-size: 26px; font-weight: bold; }
+
+.authors .authors_list .authors__position { font-size: 20px; font-weight: 200; margin-bottom: 16px; }
+
+.authors .authors_list .authors__desc p { font-size: 18px; font-weight: 200; }
+
+.post_lists .post { padding: 50px 0 30px 0; border-bottom: 0.1px solid rgba(0, 0, 0, 0.1); cursor: pointer; }
+
+.post_lists .post .post_lists__tag .post__lists__category { color: #F64F4F; font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+
+.post_lists .post .post_lists__header { display: flex; align-items: flex-end; margin-bottom: 15px; }
+
+.post_lists .post .post_lists__header .post_lists__title { font-size: 28px; font-weight: bold; }
+
+.post_lists .post .post_lists__header .catalogue-line { transition: all 0.3s ease-out; border-top: 0.2rem solid #353535; display: block; width: 2rem; }
+
+.post_lists .post .post_lists__header .catalogue-line:hover { width: 4rem; }
+
+.post_lists .post .post_lists__header .post_lists__author { margin-left: 10px; color: #90949a; }
+
+.post_lists .post p { font-size: 20px; color: #90949a; font-weight: 300; text-align: justify; }
+
+.post_lists .post .post_lists__date { display: flex; justify-content: flex-end; margin-top: 10px; color: #444444; font-size: 16px; font-weight: 300; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+.authors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .authors_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+        .authors__img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .authors__name{
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .authors__position{
+            font-size: 20px;
+            font-weight: 200;
+            margin-bottom: 16px;
+        }
+        .authors__desc{
+            p { 
+                font-size: 18px;
+                font-weight: 200;
+            }
+        }
+    }
+}

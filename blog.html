@@ -1,0 +1,35 @@
+---
+title: Blog
+---
+<div class="nav__desc">
+    <h1 class="nav__title">Blog</h1>
+    <h3 class="nav__summary">데이터 분석, 웹/앱 개발, 부동산, 주식, 경매 등 많은 분야의 글을 올려요. </h3>
+</div>
+
+<ul class="post_lists">
+    {% for post in site.posts %}
+
+    <a href="{{ post.url }}">
+        <li class="post">
+            <div class="post_lists__tag">
+                <div class="post__lists__category">
+                    <div><i class="fa fa-folder-open"></i>
+                        {% assign tags = post.categories %}
+                        {% for tag in tags %}
+                        <a href="/category/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="post_lists__header">
+                <h2 class="post_lists__title">{{ post.title }}</h2>
+                <div class="catalogue-line"></div>
+                <div class="post_lists__author">@{{post.author}}</div>
+            </div>
+            {{ post.excerpt | truncatewords: 45, ' ...' }}
+            <div class="post_lists__date">{{post.date | date_to_long_string }}</div>
+
+        </li>
+    </a>
+    {% endfor %}
+</ul>

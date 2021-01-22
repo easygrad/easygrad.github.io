@@ -1,0 +1,16 @@
+footer {
+    bottom: 0px;
+    padding: 20px 0px;
+    margin-top: 50px;
+    border-top: 0.1px solid $dark-grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $grey;
+    .footer__text {
+      color: $dark-grey;
+      font-size: 12px;
+      margin: 2px 0px;
+    }
+  }

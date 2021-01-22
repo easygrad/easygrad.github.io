@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="/assets/styles.css">
+    {% feed_meta %}
+    {% seo %}
+</head>
+
+<body>
+    <header>
+        {% include navigation.html %}
+    </header>
+    <main>
+        {{ content }}
+    </main>
+</body>
+
+<footer>
+    <h3 class="footer__text">이지졸업</h3>
+    <p class="footer__text">easygrad@gmail.com</p>
+    <p class="footer__text">&copy; easygrad, 2021</p>
+</footer>
+
+</html>
