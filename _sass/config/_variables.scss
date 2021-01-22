@@ -3,3 +3,9 @@ $dark-grey: #90949a;
 $black: #444444;
 $green: #00704A;
 $red:#F64F4F;
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+       -moz-transition: $args;
+            transition: $args;
+}

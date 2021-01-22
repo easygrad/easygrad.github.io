@@ -1,7 +1,7 @@
 ---
 author: youngmoney
 categories: [개발, 파이썬]
-tag: [javascript, 코딩, 개발]
+tags: [javascript, 코딩, 개발]
 ---
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
 berry of several species of woody vines in the genus Actinidia.

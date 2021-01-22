@@ -1,5 +1,5 @@
 .post_lists{
-    .post{
+    .post_element{
         padding: 50px 0 30px 0;
         border-bottom: 0.1px solid rgba(0,0,0,0.1);
         cursor: pointer;
@@ -11,42 +11,49 @@
                 margin-bottom: 8px;
             }
         }
-        .post_lists__header{
-            display: flex;
-            align-items: flex-end;
-            margin-bottom: 15px;
-            .post_lists__title{
-                font-size: 28px;
-                font-weight: bold;
-            }
-            .catalogue-line{
-                transition: all 0.3s ease-out;
-                border-top: 0.2rem solid #353535;
-                display: block;
-                width: 2rem;
-                &:hover{
-                    width: 4rem;
+        .post_lists__url{
+            .post_lists__header{
+                display: flex;
+                align-items: flex-end;
+                .post_lists__title{
+                    font-size: 28px;
+                    font-weight: bold;
+                    padding-bottom: 0;
+                }
+                .post_lists__author{
+                    margin-left: 10px;
+                    color: $dark-grey;
+                    font-weight: lighter;
+                    font-size: 20px;
                 }
             }
-            .post_lists__author{
-                margin-left: 10px;
+            .post_lists__line{
+                transition: all 0.3s ease-in-out;
+                display: block;
+                height: 0.2rem;
+                width: 2rem;
+                background-color: $black;
+                margin: 10px 0px;
+            }
+
+            p {
+                font-size: 20px;
                 color: $dark-grey;
+                font-weight: 300;
+                text-align: justify;
+            }
+            .post_lists__date{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 10px;
+                color: $black;
+                font-size: 16px;
+                font-weight: 300;
+            }
+            &:hover .post_lists__line,
+            &:focus .post_lists__line {
+              width: 8rem;
             }
         }
-        p {
-            font-size: 20px;
-            color: $dark-grey;
-            font-weight: 300;
-            text-align: justify;
-        }
-        .post_lists__date{
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 10px;
-            color: $black;
-            font-size: 16px;
-            font-weight: 300;
-        }
-
     }
 }

@@ -1,13 +1,31 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>
-    {{ page.date | date_to_string }}
-    {% assign author = site.authors | where: 'short_name', page.author | first %}
-    {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-    {% endif %}
-</p>
+<div class="post">
+    <div class="post-info">
+        <div class="post-category">
+            {% assign cats = page.categories %}
+            {% for cat in cats %}
+            <a href="/category/#{{tag|slugize}}">{{cat}}</a>{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        </div>
 
-{{ content }}
+        <h1 class="post-header">{{ page.title }}</h1>
+        {% assign author = site.authors | where: 'short_name', page.author | first %}
+        {% if author %}
+        - <a href="{{ author.url }}">{{ author.name }}</a>
+        {% endif %}
+
+        {% if page.date %}
+        <br>
+        <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        {% endif %}
+    </div>
+    {{ content }}
+    <div class="post-tags">
+        {% assign tags = page.tags %}
+        {% for tag in tags %}
+        <a href="/category/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    </div>
+</div>
