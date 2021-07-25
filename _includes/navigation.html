@@ -1,10 +1,19 @@
 <nav>
     <ul>
         {% for item in site.data.navigation %}
-        <li><a href="{{ item.link }}" {% if page.url == item.link %}class="active" {% endif %}>
+        {% if item.name == "이지졸업" %}
+        <li class="navigation__lists">
+            <a href="{{ item.link }}" class="home">
+                🎓{{ item.name }}
+            </a>
+        </li>
+        {% else %}
+        <li class="navigation__lists">
+            <a href="{{ item.link }}" {% if page.url==item.link %}class="active" {% endif %}>
                 {{ item.name }}
             </a>
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </nav>

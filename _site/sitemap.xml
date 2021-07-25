@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/authors/allMA.html</loc>
-<lastmod>2021-01-22T22:27:32+09:00</lastmod>
+<lastmod>2021-07-25T22:43:00+09:00</lastmod>
 </url>
 <url>
 <loc>/authors/youngmoney.html</loc>
-<lastmod>2021-01-22T22:27:32+09:00</lastmod>
+<lastmod>2021-07-25T22:43:00+09:00</lastmod>
 </url>
 <url>
 <loc>/%ED%8C%8C%EC%9D%B4%EC%8D%AC/2018/08/21/apples.html</loc>
@@ -21,8 +21,12 @@
 <lastmod>2021-01-17T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>/%EB%B8%94%EB%A1%9C%EA%B7%B8/2021/01/22/example-content.html</loc>
+<loc>/book/2021/01/22/BookReview.html</loc>
 <lastmod>2021-01-22T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>/%EB%B8%94%EB%A1%9C%EA%B7%B8/2021/01/25/example-content.html</loc>
+<lastmod>2021-01-25T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>/about.html</loc>

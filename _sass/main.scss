@@ -4,7 +4,7 @@ html, body {
   font-family: "Source Sans Pro",sans-serif,"APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif;
   font-size: 18px;
   ::selection {
-    background: #bf616a;
+    background: $main-color;
     color: #FFF;
     text-shadow: none;
 }
@@ -14,10 +14,11 @@ html, body {
     width: 80%;
     margin: 0 auto;  
     .nav__desc{
-      padding: 40px 0;
+      margin:80px 0px;
+
         .nav__title{
           font-weight: bold;
-          font-size: 40px;
+          font-size: 30px;
         }
         .nav__summary{
           font-weight: 300;

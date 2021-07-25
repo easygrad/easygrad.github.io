@@ -5,7 +5,7 @@
         cursor: pointer;
         .post_lists__tag{
             .post__lists__category{
-                color: $red;
+                color: $purple;
                 font-size: 14px;
                 font-weight: 500;
                 margin-bottom: 8px;
@@ -24,7 +24,7 @@
                     margin-left: 10px;
                     color: $dark-grey;
                     font-weight: lighter;
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             }
             .post_lists__line{
@@ -37,7 +37,7 @@
             }
 
             p {
-                font-size: 20px;
+                font-size: 18px;
                 color: $dark-grey;
                 font-weight: 300;
                 text-align: justify;
@@ -53,6 +53,9 @@
             &:hover .post_lists__line,
             &:focus .post_lists__line {
               width: 8rem;
+            }
+            &:hover p{
+                opacity: 60%;
             }
         }
     }

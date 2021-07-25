@@ -23,6 +23,16 @@
             font-weight: 200;
             margin-bottom: 16px;
         }
+        .authors__links{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            .author__icons{
+                width: 24px;
+                height: 24px;
+                margin: 4px 6px;
+            }
+        }
         .authors__desc{
             p { 
                 font-size: 18px;
