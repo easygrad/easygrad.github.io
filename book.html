@@ -6,18 +6,17 @@ title: 책 Book
     <h3 class="nav__summary">기억하고 싶은 책 속의 문장들</h3>
 </div>
 
-<ul class="post_lists">
+<ul class="book_lists">
     {% for post in site.posts %}
     {% if post.categories contains "Book" %}
-    <li class="post_element">
-        <a class="post_lists__url" href="{{ post.url }}">
-            <div class="post_lists__header">
-                <h2 class="post_lists__title">{{ post.title }}</h2>
-                <div class="post_lists__author">{{ post.author }}</div>
-            </div>
-            <div class="post_lists__line"></div>
-            {{ post.excerpt | truncatewords: 45, ' ...' }}
-            <div class="post_lists__date">{{post.date | date_to_long_string }}</div>
+    <li class="book_element">
+        <a class="book_lists__url" href="{{ post.url }}">
+            {% if post.image %}
+                <img class="book__thumbnail" src={{post.image}} alt="#">
+            {% endif %}
+            <h2 class="book_lists__title">{{ post.title }}</h2>
+            <div class="book_lists__author">{{ post.author }}</div>
+            <div class="book_lists__date">{{post.date | date_to_long_string }}</div>
         </a>
     </li>
     {% endif %}
