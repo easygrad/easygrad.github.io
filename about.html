@@ -9,12 +9,13 @@ title: 소개 About
 <ul class="authors">
     {% for author in site.authors %}
     <li class="authors_list">
-        <a href="{{ author.url }}">
+        <!-- <a href="{{ author.url }}"> -->
+        <div>
             <img class="authors__img" src="{{ author.header-img }}" alt="">
             <h2 class="authors__name"> {{ author.name }}</h2>
-            <h3 class="authors__position"> {{ author.position }}</h3>
+            <div class="authors__position"> {{ author.position }}</div>
             <div class="authors__desc"> {{ author.excerpt }} </div>
-            <div class="authors__links">
+            <!-- <div class="authors__links">
                 {% if author.github %}
                 <a href={{author.github}} class="github">
                     <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="#" class="author__icons">
@@ -26,8 +27,9 @@ title: 소개 About
                         class="author__icons">
                 </a>
                 {% endif %}
-            </div>
-        </a>
+            </div> -->
+        <!-- </a> -->
+        </div>
     </li>
     {% endfor %}
 </ul>

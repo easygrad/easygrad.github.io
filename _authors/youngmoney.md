@@ -1,8 +1,8 @@
 ---
 short_name: youngmoney
-name: 영머니
-position: Data Scientist, Designer
-header-img: authors/img/youngmoney_profile.jpeg
+name: youngmoney
+position: Data Scientist
+header-img: authors/img/youngmoney_profile.png
 github: https://github.com/TheYoungmoneY
 ---
-데이터말고 관심 많은 통계학과
+🧘🏻‍♀️요가<br>📖독서<br>🏦부동산<br>🌏친환경<br>👩🏻‍💻데이터

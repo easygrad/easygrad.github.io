@@ -1,27 +1,19 @@
 nav {
 	padding: 50px 0 30px 0;
-	width: 80%;
-	margin: 0 auto;
 	font-size: 18px;
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	ul {
 		display: flex;
 		flex-direction: row;
-		.navigation__lists {
-			margin-right: 40px;
-			a {
-				transition: all 0.1s ease-in-out;
-			}
-			a:hover {
-				color: $purple;
-			}
+		justify-content: space-between;
+		width: 960px;
+		.navigation__col1 {
 			.home {
-				margin-right: 100px;
-				color: $purple;
+				color: $main-color;
 				font-weight: bold;
 				font-size: 22px;
-				background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, $purple 50%);
+				background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, $main-color 50%);
 				background-position: -0% 0;
 				background-size: 200% auto;
 				transition: background-position 0.5s ease-out;
@@ -30,11 +22,21 @@ nav {
 				background-position: -99.99% 0;
 				color: white;
 			}
+		}
+		.navigation__col2 {
+			display: flex;
+			flex-direction: row;
+			color: $main-color;
+			a {
+				transition: all 0.3s ease-in-out;
+				margin-left: 50px;
+			}
+			a:hover {
+				color: $drag-color;
+			}
 			.active {
-				// border-bottom: 2px solid black;
 				font-weight: bold;
-				color: $purple;
-				font-size: 19px;
+				color: $drag-color;
 			}
 		}
 	}

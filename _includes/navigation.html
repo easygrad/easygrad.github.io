@@ -1,19 +1,26 @@
 <nav>
     <ul>
-        {% for item in site.data.navigation %}
-        {% if item.name == "이지졸업" %}
-        <li class="navigation__lists">
-            <a href="{{ item.link }}" class="home">
-                🎓{{ item.name }}
-            </a>
-        </li>
-        {% else %}
-        <li class="navigation__lists">
-            <a href="{{ item.link }}" {% if page.url==item.link %}class="active" {% endif %}>
-                {{ item.name }}
-            </a>
-        </li>
-        {% endif %}
-        {% endfor %}
+        <div class="navigation__col1">
+            {% for item in site.data.navigation %}
+            {% if item.name == "이지졸업" %}
+                <li class="navigation__lists">
+                    <a href="{{ item.link }}" class="home">
+                        🎓{{ item.name }}
+                    </a>
+                </li>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="navigation__col2">
+            {% for item in site.data.navigation %}
+            {% if item.name != "이지졸업" %}
+                <li class="navigation__lists">
+                    <a href="{{ item.link }}" {% if page.url==item.link %}class="active" {% endif %}>
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endif %}
+            {% endfor %}
+        </div>
     </ul>
 </nav>

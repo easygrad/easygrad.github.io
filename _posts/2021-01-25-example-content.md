@@ -2,7 +2,6 @@
 author: 영머니
 categories: [블로그]
 tags: [마크다운]
-image: http://file3.instiz.net/data/cached_img/upload/2020/10/18/4/044ab669e21f99be549da2cb998a089c.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.

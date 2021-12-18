@@ -1,31 +1,41 @@
 ---
 title: 이지졸업 Easygrad
 ---
-<div class="home__title__wrapper">
-    <div class="sub-title">🎓 졸업하는 그날까지, <h1>이지졸업</h1>
+<div class="home__title">
+    <img src="authors/img/allma_hi.png" class="home__title_img">
+    <div class="home__title__wrapper">
+        <div class="sub-title">🎓 졸업하는 그날까지,<pre> </pre> <h1>이지졸업</h1>
+        </div>
+        <div class="main-title">하루 빨리 졸업하기 위한 우리들의 게으른 블로그</div>
     </div>
-    <div class="main-title">하루 빨리 졸업하기 위한 우리들의 게으른 블로그</div>
+    <img src="authors/img/youngmoney_heart.png" class="home__title_img">
 </div>
-<div class="recent_posts">
-    <h1 class="recent_posts__header">💜최근 Posts💜</h1>
-    <div class="recent_posts__content">
-        <ul class="recent_posts__list">
+<div class="posts">
+    <h1 class="posts__header">최근 Posts</h1>
+    <div class="posts__content">
+        <ul class="posts__list">
             {% for post in site.posts offset:1 limit:6 %}
-            <li class="recent_post_element">
-                <a class="recent_post_lists__url" href="{{ post.url }}">
-                    {% if post.image %}
-                    <img class="recent_post_lists__thumbnail" src={{post.image}} alt="#">
-                    {% endif %}
-                    <div class="recent_post_lists__summary">
-                        <div class="recent_post_lists__category">
+            <li class="post_element">
+                <a class="post_lists__url" href="{{ post.url }}">
+                    <div class="post_lists__summary">
+                        <div class="post_lists__category">
                             {% assign tags = post.categories %}
                             {% for tag in tags %}
-                            <h4>{{tag}}</h4>{% unless forloop.last %}, {% endunless %}
+                            <h4 class="tag">{{tag}}</h4>{% unless forloop.last %} {% endunless %}
                             {% endfor %}
                         </div>
-                        <h2 class="recent_post_lists__title">{{ post.title }}</h2>
-                        <div class="recent_post_lists__excerpt">
-                            {{ post.excerpt | truncatewords: 30, ' ...' }}
+                        <h2 class="post_lists__title">{{ post.title }}</h2>
+                        <div class="post_lists__excerpt">
+                            {{ post.excerpt | truncatewords: 100, ' ...' }}
+                        </div>
+                        <div class = "post_lists__author__footer">
+                            <div class="post_lists__date">
+                                {{post.date | date_to_long_string }}
+                            </div>
+                            <div>by</div>
+                            <div class="post_lists__author">
+                                {{ post.author }}
+                            </div>
                         </div>
                     </div>
                 </a>
