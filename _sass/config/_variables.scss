@@ -4,11 +4,22 @@ $black: #444444;
 $green: #00704a;
 $red: #f64f4f;
 $purple: #ad33fb;
+$yellow: #ffdf3e;
+
+$notion-red: #eb5757;
+$notion-oragne: rgba(217, 115, 13, 1);
+$notion-yellow: rgba(203, 145, 47, 1);
+$notion-green: rgba(68, 131, 97, 1);
+$notion-blue: rgba(51, 126, 169, 1);
+$notion-purple: rgba(144, 101, 176, 1);
+$notion-pink: rgba(193, 76, 138, 1);
 
 $text-color: rgb(55, 53, 47);
-$drag-color: #90949a;
+$drag-color: #191d22;
 $main-color: #444444;
 $header-color: #353535;
+
+$code-font: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
 
 @mixin transition($args...) {
 	-webkit-transition: $args;

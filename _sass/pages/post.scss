@@ -1,4 +1,5 @@
 .post {
+	font-size: 18px;
 	h1 {
 		padding: 40px 0 16px 0;
 		font-weight: 700;
@@ -16,27 +17,23 @@
 			padding: 0 0 12px 0;
 		}
 	}
-
 	h3 {
 		padding: 20px 0 10px 0;
 		font-size: 22px;
 		font-weight: 600;
 	}
 
-	h4,
+	h4 {
+		padding: 12px 0 8px 0;
+		font-size: 20px;
+	}
 	h5 {
 		padding: 12px 0 8px 0;
+		font-size: 18px;
 	}
-	h5 {
-		font-size: 17px;
-	}
-	h6 {
-		line-height: 1.6;
-		font-size: 17px;
-		padding-bottom: 40px;
-		color: $grey;
-		font-weight: 400;
-		text-align: center;
+	liner {
+		background-color: $yellow;
+		padding: 0px 5px;
 	}
 	.highlight {
 		background-color: #f9f9f9;
@@ -48,42 +45,41 @@
 	}
 	ul {
 		list-style-type: none;
+		list-style: none;
 		margin: 0;
 		padding: 0;
 		li {
-			list-style: none;
+			list-style: outside;
 			padding: 6px 0;
 			margin-left: 20px;
 			line-height: 1.65;
 			position: relative;
-			&:before {
-				content: "";
-				position: absolute;
-				width: 8px;
-				height: 8px;
-				background-color: #c1cad4;
-				border-radius: 50%;
-				left: -22px;
-				top: 16px;
+			.task-list-item-checkbox {
+				margin: 0 10px 0.25em -1.6em;
+				vertical-align: middle;
 			}
 		}
 	}
 	ol {
-		margin: 0;
-		padding-left: 10px;
+		line-height: 1.65;
+		position: relative;
 		li {
+			list-style: decimal outside;
 			padding: 6px 0;
-			margin-left: 8px;
+			margin-left: 20px;
 		}
 	}
 	code {
 		background-color: #f9f9f9;
 		border-radius: 3px;
-		color: $main-color;
-		font-size: 85%;
-		padding: .25em .5em;
 		font-size: 16px;
-		font-family: Menlo, Monaco, monospace;
+		// font-family: Menlo, Monaco, monospace;
+		font-family: $code-font;
+	}
+	.language-plaintext {
+		line-height: normal;
+		font-size: 90%;
+		padding: 0.2em 0.4em;
 	}
 	hr {
 		display: block;
@@ -97,11 +93,16 @@
 		border-width: 1px;
 	}
 
+	cite,
 	blockquote {
-		border-left: 0.25rem solid #d8e0e7;
-		color: #90949a;
+		// border-left: 0.25rem solid #d8e0e7;
+		border-left: 3px solid $main-color;
+		padding-left: 14px;
+		padding-right: 14px;
+		color: $main-color;
+		font-style: oblique;
 		margin: .8rem 0 1rem 0;
-		padding: .5rem 1rem;
+		// padding: .5rem 1rem;
 		display: block;
 		margin-block-start: 1em;
 		margin-block-end: 1em;
@@ -110,7 +111,7 @@
 	}
 
 	a {
-		color: #333e4c;
+		color: $notion-blue;
 		text-decoration: underline;
 		transition: all 0.2s ease-in-out;
 		background-position: 0% 100%, 110% 90%, 0% 98%;
@@ -122,21 +123,24 @@
 			text-decoration-color: $black;
 		}
 	}
-	figcaption {
-		text-align: center;
-		font-size: 17px;
-		color: #90949a;
-		line-height: 1.8;
-		margin-bottom: 40px;
-	}
+
 	p {
 		line-height: 1.6;
-		font-size: 17px;
+		font-size: 18px;
 		color: $text-color;
 		margin: 0 0 4px 0;
 		font-weight: 400;
 		// letter-spacing: -0.01em;
 		word-break: break-word;
+		em {
+			display: block;
+			font-size: 17px;
+			color: $dark-grey;
+			font-style: oblique;
+			line-height: 1.8;
+			margin-top: -10px;
+			margin-bottom: 40px;
+		}
 	}
 	.post-info {
 		display: flex;
@@ -157,35 +161,35 @@
 				text-align: center;
 			}
 		}
-		.post-header {
-			color: $header-color;
-			margin-top: 10px;
-			font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-			font-size: 3rem;
-			padding: 4px 0 16px 0;
+	}
+	.post-header {
+		color: $header-color;
+		margin-top: 10px;
+		font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+		font-size: 3rem;
+		padding: 4px 0 16px 0;
+	}
+	.post-desc {
+		display: flex;
+		justify-content: end;
+		align-items: end;
+		margin-top: 10px;
+		color: $black;
+		font-size: 16px;
+		.post-desc__date {
+			margin-right: 10px;
+			color: $dark-grey;
 		}
-		.post-desc {
-			display: flex;
-			justify-content: end;
-			align-items: end;
-			margin-top: 10px;
-			color: $black;
-			font-size: 16px;
-			.post-desc__date {
-				margin-right: 10px;
-				color: $dark-grey;
-			}
-			.post-desc__author {
-				font-size: 18px;
-				margin-left: 6px;
-				font-weight: 500;
-			}
+		.post-desc__author {
+			font-size: 18px;
+			margin-left: 6px;
+			font-weight: 500;
 		}
 	}
 	.post-tags {
 		margin-top: 100px;
 		a {
-			color: $main-color;
+			color: $notion-blue;
 			margin-right: 10px;
 			text-decoration: none;
 			font-size: 16px;
@@ -195,7 +199,79 @@
 			color: $drag-color;
 		}
 	}
-	bold {
+	b,
+	strong {
 		font-weight: 600;
+	}
+	i {
+		font-style: italic;
+	}
+
+	sub,
+	sup {
+		font-size: 75%;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+	}
+	sup {
+		top: -0.5em;
+	}
+	sub {
+		bottom: -0.25em;
+	}
+	.highlighter-rouge {
+		color: $notion-red;
+	}
+	.highlighter-yellow {
+		background-color: $yellow;
+	}
+	code,
+	tt {
+		margin: 0 2px;
+		padding: 0 5px;
+		white-space: nowrap;
+		background-color: #f8f8f8;
+		border-radius: 3px;
+	}
+
+	pre code {
+		margin: 0;
+		padding: 0;
+		white-space: pre;
+		border: none;
+		background: transparent;
+	}
+
+	.highlight pre {
+		background-color: #f8f8f8;
+		line-height: 19px;
+		overflow: auto;
+		padding: 6px 10px;
+		border-radius: 3px;
+	}
+
+	pre {
+		background-color: #f8f8f8;
+		line-height: 19px;
+		overflow: auto;
+		display: block;
+		padding: 6px 10px;
+		border-radius: 3px;
+		.lineno {
+			border-right: 1px solid $drag-color;
+			border-radius: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	pre code,
+	pre tt {
+		background-color: transparent;
+		border: none;
+	}
+
+	p img {
+		max-width: 100%;
 	}
 }

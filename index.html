@@ -14,7 +14,7 @@ title: 이지졸업 Easygrad
     <h1 class="posts__header">최근 Posts</h1>
     <div class="posts__content">
         <ul class="posts__list">
-            {% for post in site.posts offset:1 limit:6 %}
+            {% for post in site.posts offset:0 limit:5 %}
             <li class="post_element">
                 <a class="post_lists__url" href="{{ post.url }}">
                     <div class="post_lists__summary">
@@ -26,7 +26,7 @@ title: 이지졸업 Easygrad
                         </div>
                         <h2 class="post_lists__title">{{ post.title }}</h2>
                         <div class="post_lists__excerpt">
-                            {{ post.excerpt | truncatewords: 100, ' ...' }}
+                            {{ post.content | strip_html | truncatewords: 40, ' ...' }}
                         </div>
                         <div class = "post_lists__author__footer">
                             <div class="post_lists__date">

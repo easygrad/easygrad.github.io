@@ -31,6 +31,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 - _Italics_
 - ~~Strikethrough~~
 - <ins>Underline</ins>
+- <liner>liner</liner>
 - <sup>Superscript</sup>
 - <sub>Subscript</sub>
 - Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
@@ -41,6 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 - _Italics_
 - ~~Strikethrough~~
 - <ins>Underline</ins>
+- <liner>liner</liner>
 - <sup>Superscript</sup>
 - <sub>Subscript</sub>
 - Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
@@ -85,9 +87,9 @@ Check out tale on [GitHub](https://github.com/chesterhow/tale).
 _This is an image with a caption_
 {% endhighlight %}
 
-![Placeholder image](https://placehold.it/800x400 "Placeholder image")
+![Placeholder image](http://placehold.it/800x400 "Placeholder image")
 
-![Image with caption](https://placehold.it/700x400 "Image with caption")
+![Image with caption](http://placehold.it/700x400 "Image with caption")
 _This is an image with a caption_
 
 # Code and Syntax Highlighting
