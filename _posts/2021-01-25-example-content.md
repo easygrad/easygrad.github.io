@@ -7,13 +7,15 @@ tags: [마크다운]
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.
 
 # Headers
+
 {% highlight markdown %}
+
 # H1
 ## H2
 ### H3
 #### H4
 ##### H5
-###### H6
+
 {% endhighlight %}
 
 # H1
@@ -21,14 +23,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 ### H3
 #### H4
 ##### H5
-###### H6
 
 # Text formatting
 {% highlight markdown %}
+
 - **Bold**
 - _Italics_
 - ~~Strikethrough~~
 - <ins>Underline</ins>
+- <liner>liner</liner>
 - <sup>Superscript</sup>
 - <sub>Subscript</sub>
 - Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
@@ -39,6 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 - _Italics_
 - ~~Strikethrough~~
 - <ins>Underline</ins>
+- <liner>liner</liner>
 - <sup>Superscript</sup>
 - <sub>Subscript</sub>
 - Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
@@ -47,6 +51,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 # Lists
 {% highlight markdown %}
 1. Ordered list item 1
+   1. fewf
 2. Ordered list item 2
 3. Ordered list item 3
 
@@ -58,6 +63,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 1. Ordered list item 1
 2. Ordered list item 2
 3. Ordered list item 3
+
+- [ ] checklist
+- [x] checklist
+
 
 * Unordered list item 1
 * Unordered list item 2
@@ -78,9 +87,9 @@ Check out tale on [GitHub](https://github.com/chesterhow/tale).
 _This is an image with a caption_
 {% endhighlight %}
 
-![Placeholder image](https://placehold.it/800x400 "Placeholder image")
+![Placeholder image](http://placehold.it/800x400 "Placeholder image")
 
-![Image with caption](https://placehold.it/700x400 "Image with caption")
+![Image with caption](http://placehold.it/700x400 "Image with caption")
 _This is an image with a caption_
 
 # Code and Syntax Highlighting
@@ -96,11 +105,13 @@ alert(s);
 # Sample python code
 s = "Python syntax highlighting"
 print s
+Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 {% endhighlight %}
+
 
 Adding `linenos` to the highlight tag enables line numbers.
 
-{% highlight js  linenos %}
+{% highlight js linenos %}
 // Sample javascript code
 var s = "JavaScript syntax highlighting";
 alert(s);
@@ -132,5 +143,7 @@ Use `<hr>` for horizontal rules
 and `<br>` for line breaks.
 
 <br>
+
+
 
 _The end_
